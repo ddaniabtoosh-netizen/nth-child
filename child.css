@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: white;
+    color: black;
+}
+
+.box {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.title-text {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #bfbfbf;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.zigzag-container {
+    height: 120px;
+    margin-top: 20px;
+}
+
+.zigzag-container .box {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    margin-right: 12px;
+    border: 1px solid black;
+}
+
+.zigzag-container .box:nth-child(odd) {
+    background-color: yellow;
+}
+
+.zigzag-container .box:nth-child(even) {
+    background-color:green;
+    position: relative;
+    top: 25px;
+}
+
+.numbers-container {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.num-box {
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-right: 8px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.numbers-container .num-box:nth-child(even) {
+    display: none;
+}
+
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 65px);
+    grid-gap: 12px;
+}
+
+.matrix-grid .m-box {
+    width: 65px;
+    height: 65px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 2px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.green-dot {
+    background-color: green;
+    color: black;
+}
+
+.blue-x {
+    background-color: blue;
+    color: black;
+}
+
+.font-style {
+    font-family: Arial, sans-serif;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.example-row {
+    margin-bottom: 25px;
+}
+
+.ex-item {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: black;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.ex-item.target-fifth {
+    background-color: orange;
+}
+
+.questions-list {
+    margin-left: 20px;
+    line-height: 2;
+    font-weight: bold;}
+.site-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.extra-container {
+    margin-top: 15px;
+}
+
+.extra-box {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+    margin-right: 8px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.extra-box:hover {
+    background-color: #ff0000 !important;
+    color: #ffffff;
+}
+
+.extra-box:nth-child(1):hover ~ .extra-box {
+    background-color: #ffff00;
+}
